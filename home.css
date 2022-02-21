@@ -1,0 +1,121 @@
+.land_page {
+    border: 2px solid rgb(0, 0, 0);
+    height: 100vh;
+    background-image: url('bg_top.jpg'), linear-gradient(to top, black, black);
+    background-repeat: no-repeat;
+    background-size: 40% 80%, cover;
+    background-position: center, top left;
+}
+
+.social-links {
+    margin-top: 40%;
+}
+
+.social-links a {
+    font-size: 1.8em;
+    color: aliceblue;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    color: red;
+    font-size: 2em;
+}
+
+#nav_bar {
+    margin: 0px -16px;
+    transition: all 0.5s;
+}
+
+
+/* STICK TO TP CLASS FOR NAVBAR */
+
+.sticky {
+    width: 98%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(8, 8, 8, 0.87);
+    transform: scale(1.05);
+}
+
+.sticky_small {
+    width: 98%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(8, 8, 8, 0.87);
+    transform: scale(1.05);
+}
+
+.about {
+    background-image: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -4%;
+}
+
+.content {
+    font-family: 'Roboto Serif', sans-serif;
+    background-color: rgba(117, 119, 121, 0.589);
+    border-radius: 10px;
+}
+
+.sponsers .comp_name {
+    width: 22%;
+    height: 15em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.sponsers .comp_name:hover {
+    box-shadow: 2px 2px 5px rgb(116, 114, 114);
+    height: 16.5em;
+}
+
+textarea {
+    width: 100%;
+    height: 60%;
+}
+
+@media screen and (max-width:500px) {
+    .land_page {
+        background-size: 90% 50%, cover;
+    }
+    .social-links {
+        margin-top: 185%;
+    }
+    #nav_bar_small {
+        margin: 0 -5%;
+    }
+    #side_nav {
+        height: 100vh;
+        width: 0;
+        background-color: rgba(0, 0, 0, 0.836);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        overflow-x: hidden;
+        transition: 0.5s;
+        transition: all 0.5s;
+    }
+    #side_nav a {
+        text-decoration: none;
+        color: rgb(255, 189, 65);
+        transition: all 0.2s;
+    }
+    #side_nav a:hover {
+        color: rgb(255, 251, 0);
+        background-color: rgb(126, 128, 127);
+    }
+    .about {
+        margin-top: -13%;
+    }
+    .sponsers .comp_name {
+        width: 90%;
+        height: 11em;
+    }
+}
